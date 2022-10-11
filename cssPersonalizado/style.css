@@ -49,7 +49,9 @@
   max-height: 300px;
 }
 
-
+.callout{
+  grid-area: callout;
+}
 .fondo2 {
   background: #0043c1;
 }
