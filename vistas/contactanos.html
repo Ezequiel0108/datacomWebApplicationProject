@@ -22,146 +22,222 @@
   <link rel="stylesheet" href="../bootstrap-5.2.0-dist/css/bootstrap.css" />
   <link rel="stylesheet" href="../cssPersonalizado/style.css" />
   <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+
+  <script src="../bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body class="fondo">
+<body class=" bodyc">
 
   <header>
     <!--------------------------------------nav----------------------------->
     <!--animate css-->
-    <nav class="navbar fixed-top navbar-expand-lg   ">
+    <nav class="navbar fixed-top navbar-expand-lg bg-black">
       <div class="container-fluid">
-        <img src="../imagenes/logo.png" class="img-fluid float-start " alt="..." />
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="../imagenes/logo5.png" class=" d-inline-block align-text-top" alt="..." />
+        <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="col-3 bg-warning"></div>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <div class="col-3 ms-4 bg-warning"></div>
+        <div class="collapse navbar-collapse   mt-4" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
-            <li class="nav-item">
-              <a class=" efecto  btn btn-warning  mx-1 nav-link active fw-bold" href="posts.php">Publicaciones</a>
-            </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown ">
               <a class=" efecto btn btn-warning  mx-1 nav-link active fw-bold" aria-current="page"
                 href="index.html">Inicio</a>
+              <ul class="dropdown-menu fw-bold  text-center ">
+                <li>Inicio</li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class=" efecto btn btn-warning  mx-1 nav-link active fw-bold" href="nosotros.html">Nosotros</a>
+            <li class="nav-item dropdown">
+
+              <a class="  efecto  btn btn-warning   mx-1 nav-link active fw-bold" href="posts.php">Publicaciones</a>
+              <ul class="dropdown-menu fw-bold text-center">
+                <li>Conoce nuestras publicaciones</li>
+              </ul>
             </li>
+
+            <li class="nav-item dropdown">
+              <a class=" efecto btn btn-warning  mx-1 nav-link active fw-bold" href="contactanos.html">Contactanos</a>
+              <ul class="dropdown-menu fw-bold text-center">
+                <li>¿Tienes alguna duda?</li>
+              </ul>
+            </li>
+
+
             <li class="nav-item dropdown fs-5">
               <a class=" efecto btn btn-warning  mx-1 nav-link dropdown-toggle active fw-bold" href="#" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Servicios
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="AccesoBiometrico.html">sistemas de seguridad</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+              <ul class="dropdown-menu  ">
+                <li><a class="dropdown-item fw-bold" href="#">Action</a></li>
+                <li><a class="dropdown-item fw-bold" href="AccesoBiometrico.html">sistemas de seguridad</a></li>
+                <li><a class="dropdown-item fw-bold" href="#">Action</a></li>
+                <li><a class="dropdown-item fw-bold" href="#">Another action</a></li>
+                <li><a class="dropdown-item fw-bold" href="#">Action</a></li>
+                <li><a class="dropdown-item fw-bold" href="#">Another action</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class=" efecto btn btn-warning  mx-1 nav-link active fw-bold" href="contacto.html">Contacto</a>
-            </li </ul>
+
+
+
+
+          </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <main>
-    <div class="container-fluid">
-      <!-- -----------------------------------section--------------------------->
-      <!--------------------------------------maps----------------------------->
-      <section class="mt-5 py-5 ">
+  <main class="mt-3 py-5 ">
 
-        <div class="row">
-          <div class="col-lg-6 col-sm-12 mt-5 text-white">
-            <h1 class="mt-5 fw-bold text-white animate__animated animate__backInLeft"> Nuestra información de contacto</h1>
-            <p class="fw-bold text-white fs-5 animate__animated animate__backInLeft ">
-             ¿Quieres comunicarte con nosotros?, aquí te facilitamos nuestros datos.
-             También puedes ubicarnos con facilidad desde google maps. Accede con facilidad.
-            </p>
-         <button class="btn btn-primary animate__animated animate__backInLeft">Nuestra dirección</button>
-          
-          
-          
+    <section class=" mt-5 py-5 container-fluid fw-bold text-white   ">
+      <div class="row">
 
+
+        <div
+          class=" mb-3 animate__animated animate__backInLeft  order-lg-2 card contacto px-3 col-lg-6 col-sm-12 text-white fw-bold    ">
+          <br>
+          <h3 class="fw-bold text-white text-center">Lo que usted necesite es muy importante para nosotros.
+            Por favor comuniquese, estamos a sus ordenes.
+          </h3>
+
+          <h3 class=" fw-bold d-flex justify-content-center   text-warning"> Email: marco@datacomsureste.com.mx</h3>
+          <div class="mx-auto " style="width: 200px;">
+            <img src="../imagenes/Contact.png" class="img-fluid    " alt="">
+            <br>
           </div>
-          <div class="col-lg-6 cols-sm-12 mt-5">
-
-            <h1 class="mt-5 fw-bold text-white animate__animated animate__backInRight">¡Contactanos será un placer ayudarte!</h1>
-
-            <p class="fw-bold text-white fs-5 animate__animated animate__backInRight ">
-              Lo que usted tiene que decir es muy importante para nosotros. De hecho, es invaluable. Por favor, escriba
-              sus comentarios a continuación.
-            </p>
-
-            <button type="button" class="btn btn-primary animate__animated animate__backInRight " data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Launch demo modal
+          <h3 class=" fw-bold d-flex justify-content-center   text-warning"> Teléfono: (999)
+            2875920</h3>
+          <div>
+            <button type="button" class=" mb-3 btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+              ¿ Nuestra direccón?
             </button>
           </div>
+
+
         </div>
 
 
-      </section>
-      <!-- -----------------------------------Endsection--------------------------->
-      <!--------------------------------------maps----------------------------->
-      <section class=" ">
-        <!-- Button trigger modal -->
 
+        <div
+          class="  animate__animated animate__backInLeft order-lg-1   card contacto px-5 col-lg-6 col-sm-12 text-white fw-bold   ">
+          <div class=" margenc ">
+            <h1 class="mt-3">Contáctenos </h1>
+            <p>¿Tiene alguna duda o sugerencia? Escribenos</p>
+            <form action="" method="post">
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="row">
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    <small id="helpId" class="form-text text-muted">Por favor ingresa tu nombre</small>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="" class="form-label">Telefono</label>
+                    <input type="tel" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    <small id="helpId" class="form-text text-muted">Ingresa tu teléfono de contacto</small>
+                  </div>
+                </div>
               </div>
-              <form action="" method="post">
-                <div class="modal-body">
+
+              <div class="mb-3">
+                <label for="" class="form-label">Correo</label>
+                <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                <small id="helpId" class="form-text text-muted">ingresa tu correo</small>
+              </div>
 
 
-                  <div class="mb-3">
-                    <label for="" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-                    <small id="helpId" class="form-text text-muted">Help text</small>
-                  </div>
-                  <div class="mb-3">
-                    <label for="" class="form-label">Correo</label>
-                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-                    <small id="helpId" class="form-text text-muted">Help text</small>
-                  </div>
-                  <div class="mb-3">
-                    <label for="" class="form-label">Teléfono</label>
-                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-                    <small id="helpId" class="form-text text-muted">Help text</small>
-                  </div>
-                  <div class="mb-3">
-                    <label for="" class="form-label">Comentarios</label>
-                    <textarea class="form-control" name="" id="" rows="3"></textarea>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="submit" class="btn btn-primary">Enviar</button>
-                </div>
-              </form>
-            </div>
+              <div class="">
+                <label for="floatingTextarea">Tus comentarios</label>
+                <textarea class="form-control" placeholder="Escribenos" id="floatingTextarea"></textarea>
+
+              </div>
+              <br>
+              <button type="submit" class="btn btn-warning ">Enviar</button>
+
+            </form>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+    </section>
+    <!-- modal****************************************-->
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Puedes encontarnos en:</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8844127503053!2d-89.59936644974829!3d20.99726998594684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567132a59b441b%3A0x6320320f84e09232!2sDATACOM%20HARDAWARE%20AND%20NETWORK%20SOLUTION!5e0!3m2!1ses-419!2smx!4v1667250900447!5m2!1ses-419!2smx"
+              width="400" height="300" style="border:0; " allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           
           </div>
         </div>
+      </div>
+    </div>
+    <section>
 
-      </section>
+
+    </section>
+
+    <section class="mt-5">
+      <!-- Footer -->
+      <footer class="text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: CTA -->
+          <section class="">
+            <span class="d-flex justify-content-center align-items-center text-warning"> Teléfono: (999)
+              2875920</span>
+            <p class="d-flex justify-content-center align-items-center text-warning">
+
+              <span class="me-3"> Dirección: Calle 4 No. 59 por 5 y 7 Col. Felipe Carrillo Puerto, Mérida, Yucatán, CP
+                97136</span>
+
+            </p>
+            <span class="d-flex justify-content-center align-items-center text-warning"> © 2022 Copyright: Datacom
+              Sureste
+            </span>
+          </section>
+          <!-- Section: CTA -->
+        </div>
+
+
+
+
+
+      </footer>
+      <!-- Footer -->
+    </section>
+
+
   </main>
-  </div>
 
 
 
 
-  <script src="../bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+
+
   <script src="validateForm.js"></script>
 
 </body>

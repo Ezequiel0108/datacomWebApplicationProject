@@ -1,16 +1,105 @@
+
+
 .margen {
   margin-top: 50px;
 }
+.contacto {
+  border-radius: 60px;
+  background: #000000;
+  box-shadow:  22px 22px 44px #171414,
+  -22px -22px 44px #2f2a2a;
+  width: 36rem; margin-left: 2%;
+}
+ .fondoc{
+  background-color: #bbb;
+
+ }
+ .bodyc{
+  background: #000000;
+ }
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .ocultar-div{
+  display:none;
+  }
+  }
+
+  @media screen and (min-width: 600px) {
+    .ocultar-div2{
+    display:none;
+    }
+    }
+
+  
+@media screen and (max-width: 600px) {
+  .borderCard2{
+
+    overflow:hidden;
+     border:solid;
+     border-right: hidden;
+     border-left: hidden; 
+     border-color: yellow;
+   
+  }
+  }
+
+.borderCard{
+
+  overflow:hidden;
+   border:solid;
+   border-right: hidden;
+   border-left: hidden; 
+   border-color: yellow;
+ 
+}
+
+
+scroll-container {
+  display: block;
+  width: 350px;
+  height: 200px;
+  overflow-y: scroll;
+ 
+  scroll-behavior: smooth;
+  
+}
+scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 5em;
+}
+
 
 
 .fijo {
   position: fixed;
   margin-left: 70%;
+  
 }
+.dropdown:hover .dropdown-menu {
+display: block;
+
+
+
+}
+
+
 
 .letra {
   font-style:oblique ;
   text-align: center;
+}
+.fondo12 {
+  background-image: url("../imagenes/corpo21.webp") !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .fondo {
@@ -20,7 +109,7 @@
   background-size: cover;  overflow-x: hidden;
 }
 .fondo4 {
-  background-image: url("../imagenes/fondo4.jpg") !important;
+  background-image: url("../imagenes/corpo21.webp") !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -29,9 +118,9 @@
 .azul{
   background-color: #0d59ad;
 }
-
-
-
+.marginc{
+  margin: 4%;
+}
 
 .hit-the-floor {
   color: rgb(44, 12, 230);
@@ -64,7 +153,9 @@
   margin: 1% 0 0 1%;
   perspective: 800px;
   transition: all 0.3s ease 0s;
-  width: 23.7%;
+  width: 31.9%;
+
+ 
 }
 
 
@@ -84,6 +175,7 @@
   width: 100%;
   -webkit-animation: giro 1s 1;
   animation: giro 1s 1;
+ 
 }
 
 .front,
@@ -105,14 +197,8 @@
 .back {
   transform: rotateY(180deg);
 }
-.max{
-  height: 300px;
-  width: 600px;
 
-}
-.centro{
-  margin-left: 320px;
-}
+
 
 
 .h1 {
@@ -151,7 +237,10 @@
   text-shadow: 0 0 1px #333;
 }
 .efecto:hover {
-  background: rgb(255, 255, 255);
+  background: rgb(253, 233, 47);
+  color: rgb(0, 0, 0) !important;
+  border: none;
+  border-color: rgb(9, 56, 197);
 
  
   
