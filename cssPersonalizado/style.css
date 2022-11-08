@@ -103,7 +103,7 @@ display: block;
 }
 
 .fondo {
-  background-image: url("../imagenes/fondo2.jpg") !important;
+  background-image: url("../imagenes/ejemplo.jpg") !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;  overflow-x: hidden;
@@ -116,7 +116,8 @@ display: block;
   overflow-x: hidden;
 }
 .azul{
-  background-color: #0d59ad;
+  background-color: #0070C0;
+  
 }
 .marginc{
   margin: 4%;
