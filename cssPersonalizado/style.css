@@ -96,20 +96,28 @@ display: block;
   text-align: center;
 }
 .fondo12 {
-  background-image: url("../imagenes/corpo21.webp") !important;
+  background-image: url("../imagenes/ejemplo.jpg") !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
 .fondo {
-  background-image: url("../imagenes/ejemplo.jpg") !important;
+  background-image: url("../imagenes/corpo21.webp") !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;  overflow-x: hidden;
 }
 .fondo4 {
-  background-image: url("../imagenes/corpo21.webp") !important;
+  background-image: url("../imagenes/ejemplo.jpg") !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.liso {
+  background-image: url("../imagenes/portero.jpg") !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
