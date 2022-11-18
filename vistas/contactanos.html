@@ -102,18 +102,18 @@
           <div class=" margenc  mt-3">
 
             <p class="fw-bold text-warning">¿Tiene alguna duda o sugerencia? Escribenos</p>
-            <form action="" method="post">
+            <form action="enviar-email.php" method="post">
 
 
               <div class="mb-3">
                 <label for="" class="form-label">Name</label>
-                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                <input required type="text" class="form-control" name="nombre" id="" aria-describedby="helpId" placeholder="">
                 <small id="helpId" class="form-text text-muted">Por favor ingresa tu nombre</small>
               </div>
 
               <div class="mb-3">
-                <label for="" class="form-label">Telefono</label>
-                <input type="tel" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                <label  for="" class="form-label">Telefono</label>
+                <input type="tel" class="form-control" name="telefono" id="" aria-describedby="helpId" placeholder="opcional">
                 <small id="helpId" class="form-text text-muted">Ingresa tu teléfono de contacto</small>
               </div>
 
@@ -121,18 +121,18 @@
 
               <div class="mb-3">
                 <label for="" class="form-label">Correo</label>
-                <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                <input required type="email" class="form-control" name="email" id="" aria-describedby="helpId" placeholder="">
                 <small id="helpId" class="form-text text-muted">ingresa tu correo</small>
               </div>
 
 
               <div class="">
                 <label for="floatingTextarea">Tus comentarios</label>
-                <textarea class="form-control" placeholder="Escribenos" id="floatingTextarea"></textarea>
+                <textarea name="comentarios" required class="form-control" placeholder="Escribenos" id="floatingTextarea"></textarea>
 
               </div>
               <br>
-              <button type="submit" class="btn btn-warning ">Enviar</button>
+              <button type="submit" id="submit" value="Enviar" name="submit" class="btn btn-warning ">Enviar</button>
 
             </form>
           </div>
@@ -240,7 +240,7 @@
 
 
 
-  <script src="validateForm.js"></script>
+
 
 </body>
 

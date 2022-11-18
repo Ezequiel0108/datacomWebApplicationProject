@@ -32,7 +32,7 @@ $datos = $obj->read();
 
 ?>
 
-<body  class="fondo4">
+<body class="fondo4">
   <script src="code.js"></script>
   <header>
     <!--------------------------------------nav style="background-color: #0a1c26 ;"----------------------------->
@@ -43,11 +43,11 @@ $datos = $obj->read();
         <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="col-3 ms-4 "></div>
+        <div class="col-2 ms-4 "></div>
         <div class="collapse navbar-collapse   mt-4" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
             <li class="nav-item dropdown ">
-              <a style="<?php echo empty($_SESSION['correo']) ? 'display:none' : '' ?>" class=" efecto btn btn-danger  mx-1 nav-link active fw-bold" aria-current="page" href="../crudPosts/index.php">Controlar posts</a>
+              <a style="<?php echo empty($_SESSION['correo']) ? 'display:none' : '' ?>" class=" efecto btn btn-danger  mx-1 nav-link active fw-bold" aria-current="page" href="../crudPosts/index.php"> Posts</a>
             </li>
             <li class="nav-item dropdown ">
               <a class=" efecto btn btn-warning  mx-1 nav-link active fw-bold" aria-current="page" href="index.html">Inicio</a>
@@ -91,99 +91,88 @@ $datos = $obj->read();
   </header>
 
 
-
-  <article class="mt-5 py-5">
-
-    <section class=">
+  <main class="callout ">
 
 
-      <div class=" margen "></div>
+    <article class="mt-5 py-5">
 
-      <div class=" row">
-      <div class="col-8">
-        <!-- codigo php-->
-        <?php
-        $vacio = sizeof($datos);
-        if ($vacio == 0) {
-          echo "Lo siento por el momento no tenemos posts actualizados una disculpa";
-        } else {
-        ?>
-          <?php foreach ($datos as $dato) {
+      <section >
 
-          ?>
-            <!-- Modal -->
-            <div class="modal fade " id="modal<?php echo $dato["id"] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog ">
-                <div class="modal-content " style="background-color:black">
-                  <div class="modal-header">
-                    <h5 class="modal-title text-white fw-bold" id="exampleModalLabel">Descripción </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <b class="text-white fw-bold"><?php echo $dato["descripcion"];  ?></b>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-                  </div>
-                </div>
+        <div class=" margen "></div>
+
+        <div class=" row">
+      
+        
+              <div class=" col-lg-8 col-sm-10  ">
+                <!-- codigo php-->
+                <?php
+                $vacio = sizeof($datos);
+                if ($vacio == 0) {
+                  echo "Lo siento por el momento no tenemos posts actualizados una disculpa";
+                } else {
+                ?>
+                  <?php foreach ($datos as $dato) {
+
+                  ?>
+                    <!-- Modal -->
+                    <div class="modal fade " id="modal<?php echo $dato["id"] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog ">
+                        <div class="modal-content " style="background-color:black">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-warning fw-bold" id="exampleModalLabel">Descripción </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <b class="text-white fw-bold"><?php echo $dato["descripcion"];  ?></b>
+                          </div>
+                          <div class="modal-footer">
+                          <a class="btn btn-warning ms-4 text-black fw-bold" href="contactanos.html">Comunicate con nosotros</a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--fin modal-->
+
+                    <div class="container-fluid  py-4">
+
+
+                      <div class="row">
+
+                        <div class="col-12 ">
+                          <img class="img-fluid " style="" src="../crudPosts/imagenes/<?php echo $dato["imagen"]; ?> ">
+                          <div class="row">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal<?php echo $dato["id"] ?>">
+                              Más detalles
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                <?php }
+                } ?>
+
               </div>
-            </div>
-            <!--fin modal-->
 
-            <div class="container-fluid  py-4">
-
-
-              <div class="row">
-
-                <div class="col-12 ">
-                  <img class="img-fluid " style="" src="../crudPosts/imagenes/<?php echo $dato["imagen"]; ?> ">
-                  <div class="row">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal<?php echo $dato["id"] ?>">
-                      Más detalles
-                    </button>
-                  </div>
-                </div>
-
-
-
-
+              <div class="col-lg-4  ocultar-div fijo">
+            
               </div>
 
-            </div>
-        <?php }
-        } ?>
-
-      </div>
-
-      <div class="col-4  fijo">
-        <!-- Hacer una redireccion al contacto-->
-        <br>
-        <br>
-        <b class="hit-the-floor  estilo-x "></b>
-        <img class=" img-fluid" src="../imagenes/gif/contactanos2.webp" alt="">
-        <a class="btn btn-warning ms-4 text-black fw-bold" href="contactanos.html">Comunicate con nostros</a>
-
-
-      </div>
+        </div>
+      </section>
 
 
 
-      </div>
+    </article>
 
 
 
+    <script src="../bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
 
-
-    </section>
-
-
-
-  </article>
-
-
-
-  <script src="../bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+  </main>
 
 </body>
 
