@@ -21,7 +21,14 @@
  
 
 
-
+ @media screen and (min-width: 600px) {
+  .ocultar-class{
+     
+     margin-left: 15px;
+     margin-right: 15px;
+  
+  }
+}
 
 
 @media screen and (max-width: 600px) {
