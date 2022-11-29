@@ -1,0 +1,51 @@
+.container {
+  max-width: 960px;
+}
+
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -15%;
+  width: 300px;
+  height: 540px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 5%;
+  left: 10px;
+  color: crimson;
+  font-size: x-large;
+  text-align: center;
+  content: "";
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -10%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #000000;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}

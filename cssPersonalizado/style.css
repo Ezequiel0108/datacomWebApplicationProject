@@ -87,9 +87,8 @@ scroll-page {
 .dropdown:hover .dropdown-menu {
 display: block;
 
-
-
 }
+
 
 
 
@@ -105,7 +104,7 @@ display: block;
 }
 
 .fondo {
-  background-image: url("../imagenes/corpo21.webp") !important;
+  background-image: url("../imagenes/portero.jpg") !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;  overflow-x: hidden;
@@ -118,6 +117,10 @@ display: block;
   overflow-x: hidden;
 }
 
+.navbar2{
+  background-color: #022463;
+
+}
 .liso {
   background-image: url("../imagenes/portero.jpg") !important;
   background-repeat: no-repeat;
