@@ -1,8 +1,5 @@
 
 
-.margen {
-  margin-top: 50px;
-}
 .contacto {
   border-radius: 60px;
   background: #000000;
@@ -121,6 +118,7 @@ display: block;
   background-attachment: fixed;
   background-size: cover;  overflow-x: hidden;
 }
+
 .fondo4 {
   background-image: url("../imagenes/ejemplo.jpg") !important;
   background-repeat: no-repeat;
@@ -128,21 +126,8 @@ display: block;
   background-size: cover;
   overflow-x: hidden;
 }
-
-.navbar2{
-  background-color: #022463;
-
-}
-.liso {
-  background-image: url("../imagenes/portero.jpg") !important;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  overflow-x: hidden;
-}
 .azul{
   background-color: #0070C0;
-  
 }
 .marginc{
   margin: 4%;
