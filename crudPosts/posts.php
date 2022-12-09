@@ -16,7 +16,7 @@ class posts extends conexion{
         $pre->execute();
 
     }
-
+    
     public function edit(){
         $pre=$this->conectar();
         $pre=$this->conexion->prepare("UPDATE posts SET imagen=:imagen , descripcion=:descripcion  WHERE id=:id ");
@@ -55,5 +55,3 @@ class posts extends conexion{
     }
 
 }
-
-?>
