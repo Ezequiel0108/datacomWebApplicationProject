@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -22,7 +23,7 @@
   <link rel="stylesheet" href="../cssPersonalizado/style.css" />
 </head>
 <?php
-session_start();
+
 
 include_once "../crudPosts/posts.php";
 $obj = new posts();
@@ -70,7 +71,7 @@ $datos = $obj->read();
                 Servicios
               </a>
               <ul class="dropdown-menu  ">
-                <li><a class="dropdown-item fw-bold" href="../servicios/videoPortero.html">Video Portero</a></li>
+                <li><a class="dropdown-item fw-bold" href="../Servicios/videoPortero.html">Video Portero</a></li>
                 <li><a class="dropdown-item fw-bold" href="../Servicios/accesoBiometrico.html">Sistemas de intrusión</a></li>
                 <li><a class="dropdown-item fw-bold" href="../Servicios/videoVigilancia.html">Video vigilancia</a></li>
                 <li><a class="dropdown-item fw-bold" href="../Servicios/redes.html">Redes de voz y datos</a></li>

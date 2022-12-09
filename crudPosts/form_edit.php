@@ -1,4 +1,9 @@
+<?php session_start();
+if (empty($_SESSION['correo'])) { //si esta vacio la variable de sesion entonces... validamos el true de empty
+    header("location:login.php");
+} ?>
 <?php
+
 include "posts.php";
 
 
@@ -73,7 +78,7 @@ if($_POST){
                    
            <h3 class="card-title text-center ">Formulario de edición de posts</h3>
            </br>
-               <form action="form_edit.php" method="post" enctype="multipart/form-data"> 
+               <form action="form_edit.php" method="post" enctype="multipart/form-data" id='form'> 
                    <input type="text" hidden name="ide" value="<?php echo $idEdit;?>">
                    <div class="mb-3">
                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
@@ -81,7 +86,7 @@ if($_POST){
                        </svg>
                        <label  class="form-label"> <img src="imagenes/<?php echo $imagend ?>" width="100"  alt="100px"></label>
                       
-                       <input name="imagen" type="file" class="form-control" id="" placeholder="imagene.jpgp">
+                       <input name="imagen" type="file" class="form-control" id="imagen" placeholder="imagene.jpgp">
                    </div>
                    <div class="mb-3">
                    
@@ -91,7 +96,7 @@ if($_POST){
                        </svg>
                        <label  class="form-label">Ingresa tu descripción del post</label>
                        
-                       <textarea name="descripcion"   class="form-control"  rows="3" cols="10">
+                       <textarea name="descripcion" id='descripcion'   class="form-control"   cols="10">
                        <?php  echo (isset($descripciond)?$descripciond:"");?>               
                        </textarea>
                    
@@ -112,6 +117,27 @@ if($_POST){
                </form>
              
        </div>
-       <script src="../bootstrap-5.2.0-dist/css/bootstrap.js" ></script>
+       <script src="../bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+       <script>
+        
+       $form=document.getElementById('form').addEventListener('submit',(e)=>{
+        
+        $descripcion=document.getElementById('descripcion')
+        
+        $imagen=document.getElementById('imagen');
+        let error="";
+         if($imagen.files.length==0){
+          error+="Por favor no dejes tu imagen vacía\n"
+         }
+         if($descripcion.value.trim().length<10){
+          error+="No olvides dejar una pequeña descripción jeje "
+         }
+         if(error.length>0){
+          e.preventDefault()
+          alert(error);
+         }
+       });
+
+       </script>
   </body>
 </html>

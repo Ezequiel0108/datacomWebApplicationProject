@@ -118,14 +118,14 @@ if ($_POST) {
 
                     <h3 class="card-title text-center ">Formulario de creación de post</h3>
                     </br>
-                    <form action="index.php" method="post" enctype="multipart/form-data">
+                    <form action="index.php" method="post" enctype="multipart/form-data" id="form">
                         <input type="text" hidden name="id" value="">
                         <div class="mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
                                 <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z" />
                             </svg>
                             <label class="form-label">Selecciona tu imagen</label>
-                            <input name="imagen" type="file" class="form-control" id="" placeholder="imagene.jpgp">
+                            <input  name="imagen" type="file" class="form-control" id="imagen" placeholder="imagene.jpgp">
                         </div>
                         <div class="mb-3">
 
@@ -135,7 +135,7 @@ if ($_POST) {
                             </svg>
                             <label class="form-label">Ingresa tu descripción del post</label>
 
-                            <textarea name="descripcion" class="form-control" rows="3" cols="10">
+                            <textarea id="descripcion" name="descripcion" class="form-control" rows="3" cols="10">
 
                                 </textarea>
 
@@ -215,6 +215,28 @@ if ($_POST) {
 
 
     <script src="../bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+       <script>
+        
+       $form=document.getElementById('form').addEventListener('submit',(e)=>{
+        
+        $descripcion=document.getElementById('descripcion')
+        
+        $imagen=document.getElementById('imagen');
+        let error="";
+         if($imagen.files.length==0){
+          error+="Por favor no dejes tu imagen vacía\n"
+         }
+         if($descripcion.value.trim().length<10){
+          error+="No olvides dejar una pequeña descripción jeje por lo menos 10 letras"
+         }
+         if(error.length>0){
+          e.preventDefault()
+          alert(error);
+         }
+       });
+
+       </script>
+
 </body>
 
 </html>
