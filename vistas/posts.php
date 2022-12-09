@@ -38,11 +38,11 @@ $datos = $obj->read();
         <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="col-3  "></div>
+        <div class=" <?php echo empty($_SESSION['correo']) ? 'col-3 ms-5' : 'col-2 ms-4'  ?> "></div>
         <div class="collapse navbar-collapse  mt-4 ms-5" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
             <li class="nav-item dropdown ">
-              <a style="<?php echo empty($_SESSION['correo']) ? 'display:none' : '' ?>" class=" efecto btn btn-danger  mx-1 nav-link active fw-bold" aria-current="page" href="../crudPosts/index.php"> Posts</a>
+              <a style="  <?php echo empty($_SESSION['correo']) ? 'display:none;' : '' ?>" class=" efecto btn btn-danger  mx-1 nav-link active fw-bold" aria-current="page" href="../crudPosts/index.php">Crear Post</a>
             </li>
             <li class="nav-item dropdown ">
 
