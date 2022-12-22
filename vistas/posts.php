@@ -34,7 +34,7 @@ $datos = $obj->read();
 <body class="azul  " >
   <script src="code.js"></script>
   <header>
-  <nav class="navbar navbar-expand-lg fondo text-white">
+  <nav class="navbar navbar-expand-lg  azul text-white">
     <div class="container-fluid">
       <img src="../imagenes/logo.png" class="img-fluid float-start" alt="..." />
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -96,7 +96,7 @@ $datos = $obj->read();
             <!-- Modal -->
             <div class="modal fade " id="modal<?php echo $dato["id"] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog ">
-                <div class="modal-content fondo">
+                <div class="modal-content ">
                   <div class="modal-header">
                     <h5 class="modal-title text-black" id="exampleModalLabel">Descripción </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -118,7 +118,7 @@ $datos = $obj->read();
 
               <div class="row">
 
-                <div class="col-12 ">
+                <div class="col-sm-12 col-lg-12 ">
                   <img class="img-fluid" src="../crudPosts/imagenes/<?php echo $dato["imagen"]; ?> ">
                   <div class="row">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal<?php echo $dato["id"] ?>">
@@ -138,16 +138,7 @@ $datos = $obj->read();
           
         </div>
 
-        <div class="col-4  fijo" >
-          <!-- Hacer una redireccion al contacto-->
-          <br>
-          <br>
-          <b class="hit-the-floor  estilo-x "></b>
-          <img  class=" img-fluid" src="../imagenes/gif/contactanos2.webp"  alt="">
-          <a class="btn btn-warning ms-4" href="">Comunicate con nostros</a>
-
-        
-        </div>
+       
 
     
 
