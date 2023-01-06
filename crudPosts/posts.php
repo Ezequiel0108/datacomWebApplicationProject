@@ -8,7 +8,7 @@ class posts extends conexion{
 
 
     public function create(){
-   
+
         $pre= $this->conectar();
         $pre=$this->conexion->prepare("INSERT INTO `posts` (`descripcion`, `imagen`) VALUES (:descripcion, :imagen);");
         $pre->bindParam(":descripcion",$this->descripcion);
@@ -24,7 +24,6 @@ class posts extends conexion{
         $pre->bindParam(":imagen",$this->imagen);
         $pre->bindParam(":id",$this->id);
         $pre->execute();
-
     }
 
     public function delete(){
@@ -35,7 +34,7 @@ class posts extends conexion{
         
 
     }
-
+    
     public function read(){
        
         $pre=$this->conectar();

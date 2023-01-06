@@ -16,6 +16,7 @@ $descripcion = (isset($_POST['descripcion']) ? $_POST['descripcion'] : "");
 $id = (isset($_POST['id']) ? $_POST['id'] : "");
 
 
+
 if ($_POST) {
     //se dan acciones dependiendo que ingrese el usuario
     $boton = $_POST['accion'];
@@ -33,6 +34,8 @@ if ($_POST) {
 
             break;
         case 'Borrar':
+        
+           
             $datos = new posts();
             $datos->id = $id;
             $imagenB = $datos->datosId();
@@ -178,9 +181,9 @@ if ($_POST) {
                                 </td>
                                 <td><?php echo $post['descripcion']  ?></td>
                                 <td>
-                                    <form action="index.php" method="post">
+                                    <form action="index.php" id="formBorrado" method="post">
 
-                                        <input type="submit" value="Borrar" name="accion" class="btn btn-danger">
+                                        <input onclick=" return confirmation()"  type="submit" value="Borrar" name="accion" class="btn btn-danger">
 
                                         <input type="text" hidden value="<?php echo $post['id'] ?>" name="id" ;>
 
@@ -217,7 +220,9 @@ if ($_POST) {
     <script src="../bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
        <script>
         
-       $form=document.getElementById('form').addEventListener('submit',(e)=>{
+    
+     
+        $form=document.getElementById('form').addEventListener('submit',(e)=>{
         
         $descripcion=document.getElementById('descripcion')
         
@@ -234,6 +239,17 @@ if ($_POST) {
           alert(error);
          }
        });
+        function confirmation() {
+        if(confirm("Realmente desea eliminar?"))
+        {
+            return true;
+        }
+        return false;
+        }
+      
+      
+      
+       
 
        </script>
 
