@@ -1,1 +1,2 @@
 En este archivo ya esta la pagina final, solo falta borrar codigo innecesario
+en caso que quieras poner en la etiqueta nav las siguietnes claaase "ocultar-class1 ocultar-class2 ocultar-class3"

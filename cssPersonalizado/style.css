@@ -18,14 +18,7 @@
  
 
 
- @media screen and (min-width: 600px) {
-  .ocultar-class{
-     
-     margin-left: 16px;
-     margin-right: 16px;
-  
-  }
-}
+
 
 
 @media screen and (max-width: 600px) {
@@ -52,16 +45,17 @@
    
   }
   }
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 2050px) {
 .borderCard{
 
   overflow:hidden;
    border:solid;
    border-right: hidden;
    border-left: hidden; 
+   border-top: hidden;
+   
    border-color: yellow;
    
- 
 }
 }
 

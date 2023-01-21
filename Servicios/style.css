@@ -12,6 +12,36 @@
   color:white;
 }
 
+@media screen and (min-width: 1200px ) {
+  
+  .ocultar-class1{
+     margin-left: 28px;
+     margin-right: 28px;
+  
+  }
+}
+
+
+@media screen and (min-width: 1920px) {
+  
+  .ocultar-class2{
+     
+     margin-left: 320px;
+     margin-right: 319px;
+  
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  
+  .ocultar-class3{
+     
+     margin-left: 12px; 
+     margin-right: 12px;
+  
+  }
+}
 
 .product-device {
   position: absolute;
